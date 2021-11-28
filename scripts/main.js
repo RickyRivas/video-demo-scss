@@ -1,3 +1,13 @@
+document.onreadystatechange = function() {
+	if (document.readyState !== "complete") {
+		document.querySelector("body").style.visibility = "hidden";
+		document.querySelector("#loader").style.visibility = "visible";
+	} else {
+		document.querySelector("#loader").style.display = "none";
+		document.querySelector("body").style.visibility = "visible";
+	}
+};
+
 // Navigation 1
 const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
