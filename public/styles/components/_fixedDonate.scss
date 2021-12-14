@@ -1,0 +1,36 @@
+
+// landing-btn
+.landing-btn {
+  background-color: $green;
+  padding: .2em 2em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 3;
+  color: white;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -3;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    animation: pulse-animation 2s infinite;
+    display: block;
+  }
+
+  & span {
+    color: white;
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(162, 222, 208, 1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+}

@@ -1,0 +1,371 @@
+@media (min-width: 0px) {
+    #donations {
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(/images/donationsbg.webp);
+        background-color: #F7FFF7;
+        background-position: center;
+        background-size: cover;
+
+        & .donations {
+            max-width: 1200px;
+            padding: 1em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            color: white;
+
+            & .donations-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                order: 2;
+                grid-gap: 1em;
+                height: 370px;
+                grid-template-areas:
+                    "top top"
+                    "left right";
+
+                & .top {
+                    grid-area: top;
+                    background-image: url(/images/dday121.webp);
+                    background-position: center 20%;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+                }
+
+                & .right {
+                    grid-area: right;
+                    background-image: url(/images/day2-1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+                }
+
+                & .left {
+                    grid-area: left;
+                    background-image: url(/images/gridimg1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+                }
+            }
+
+            & .donations-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                line-height: 1.5;
+
+                & .products {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    place-items: center;
+
+                    & .product {
+                        color: black;
+                        text-align: center;
+                        margin-bottom: 1em;
+                        color: white;
+                        h2 {
+                            color: white;
+                        }
+
+                        & button {
+                            background-color: $primary-color;
+                            padding: 10px 30px;
+                            color: white;
+                            border: 0;
+                            cursor: pointer;
+
+                            & :hover {
+                                opacity: .8;
+                            }
+                        }
+                    }
+
+                    & .other-popup {
+                        order: 4;
+                        & button {
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #donations {
+        width: 100%;
+        background-color: #F7FFF7;
+
+        & .donations {
+            width: 504px;
+            padding: 1em;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: auto;
+
+            & .donations-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                order: 2;
+                grid-gap: 1em;
+                height: 50vh;
+                grid-template-areas:
+                    "top top"
+                    "left right";
+
+                & .top {
+                    grid-area: top;
+                    background-image: url(/images/dday121.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center 20%;
+                }
+
+                & .right {
+                    grid-area: right;
+                    background-image: url(/images/day2-1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                & .left {
+                    grid-area: left;
+                    background-image: url(/images/gridimg1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            & .donations-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+
+                & .products {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    place-items: center;
+
+                    & .product {
+                        color: black;
+                        text-align: center;
+
+                        & button {
+                            background-color: $primary-color;
+                            padding: 10px 30px;
+                            color: white;
+                            border: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    #donations {
+        width: 100%;
+        background-color: #F7FFF7;
+        padding: 2em;
+
+        & .donations {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin: auto;
+            height: 504px;
+            grid-gap: 2em;
+            place-items: center;
+
+            & .donations-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                order: unset;
+                grid-gap: 1em;
+                height: 500px;
+                width: 500px;
+                grid-template-areas:
+                    "top top"
+                    "left right";
+
+                & .top {
+                    grid-area: top;
+                    background-image: url(/images/dday121.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center 20%;
+                }
+
+                & .right {
+                    grid-area: right;
+                    background-image: url(/images/day2-1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                & .left {
+                    grid-area: left;
+                    background-image: url(/images/gridimg1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            & .donations-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+                height: 100%;
+                p {
+                    line-height: 1.5;
+                }
+
+                & .products {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    place-items: center;
+                    color: white;
+
+                    & .product {
+                        text-align: center;
+
+                        & button {
+                            background-color: $primary-color;
+                            padding: 10px 30px;
+                            color: white;
+                            border: 0;
+
+                            &:hover {
+                                opacity: .8;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #donations {
+        width: 100%;
+        background-color: #F7FFF7;
+        padding: 2em;
+
+        & .donations {
+            width: 100%;
+            max-width: 1200px;
+            padding: 0em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            margin: auto;
+            height: 504px;
+            grid-gap: 2em;
+
+            & .donations-gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                order: unset;
+                grid-gap: 1em;
+                height: 504px;
+                width: 504px;
+                grid-template-areas:
+                    "top top"
+                    "left right";
+
+                & .top {
+                    grid-area: top;
+                    background-image: url(/images/dday121.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center 20%;
+                }
+
+                & .right {
+                    grid-area: right;
+                    background-image: url(/images/day2-1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+                & .left {
+                    grid-area: left;
+                    background-image: url(/images/gridimg1.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            & .donations-text {
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                flex-direction: column;
+
+                & .products {
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    place-items: center;
+
+                    & .product {
+                        text-align: center;
+                        margin-bottom: unset;
+                        margin: 1em;
+                        color: white;
+
+                        & button {
+                            background-color: $primary-color;
+                            padding: 10px 30px;
+                            color: white;
+                            border: 0;
+
+                            &:hover {
+                                opacity: .8;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
